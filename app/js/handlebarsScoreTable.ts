@@ -155,7 +155,8 @@ function produceTable (HBTemplate: string, scoresDataObject) {
     score_list.innerHTML += html;
 
     addEditEventListeners();
-    addDeleteEventListeners()
+    addDeleteEventListeners();
+    addNotesEventListeners();
 }
 
 function addEventListenersForDownloadButtons(){

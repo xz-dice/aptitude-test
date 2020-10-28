@@ -87,7 +87,7 @@ input {
     color: $main-background-color;
   }
 
-  .edit-user-button, .delete-user-button {
+  .edit-user-button, .delete-user-button, .internal-notes-button {
     color: $main-background-color;
   }
 
@@ -101,6 +101,10 @@ input {
 
   .delete-user-button {
     background-color: $primary-button-hover;
+  }
+
+  .internal-notes-button {
+    background-color: $internal-notes-button;
   }
 
   .email {
