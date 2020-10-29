@@ -1,4 +1,4 @@
-import {UserAnswers} from "./interfaces/UserAnswers";
+import {UserAnswers, UserAnswerWithNotesData} from "./interfaces/UserAnswers";
 
 var questionAmount
 
@@ -64,18 +64,37 @@ async function getAnswers() {
  *
  * @return Object of users answers
  */
-function getUserAnswers(): UserAnswers {
+function getUserAnswers(): UserAnswerWithNotesData {
     questionAmount = document.querySelectorAll('#questions .question').length
-    let checkedInputs = document.querySelectorAll('#questions .question .answers input:checked')
-    let answers = {}
+    let answerElements = document.querySelectorAll('#questions .question .answers')
+    let userAnswers = {answers:[]}
 
-    checkedInputs.forEach(function(input: HTMLInputElement) {
-        let id = input.name.split("_")[1]
-        answers[id] = input.value
+    answerElements.forEach(function(answerElement: HTMLInputElement) {
+        let selectedAnswer = answerElement.querySelector<HTMLInputElement>('input:checked') ? answerElement.querySelector<HTMLInputElement>('input:checked').value : null
+        let id = answerElement.dataset.qid
+        let notes = answerElement.parentElement.querySelector<HTMLInputElement>('textarea').value
+        let userAnswerObject = {
+            questionNumber: id,
+            selectedAnswer: selectedAnswer,
+            notes: notes
+        }
+        userAnswers.answers.push(userAnswerObject)
     })
 
-    return answers
+    return userAnswers
 }
+
+
+function removeNotes(userAnswers: UserAnswerWithNotesData): UserAnswers {
+    const answers = userAnswers.answers
+    const object : UserAnswers = {}
+    answers.forEach((answer) => {
+       object[answer.questionNumber] = answer.selectedAnswer
+    })
+    console.log(object)
+    return object
+}
+
 
 /**
  * gets percentage of user score
@@ -138,7 +157,7 @@ function trackActiveQuestion(id: number) {
 function showResults(pageLeft) {
     resetReapplyCounter()
     clearInterval(interval)
-    const userAnswers = getUserAnswers()
+    const userAnswers = removeNotes(getUserAnswers())
     checkAnswers(userAnswers).then(function (result) {
         let percentResult
         let answered
