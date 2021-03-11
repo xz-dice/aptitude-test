@@ -30,4 +30,6 @@ function createCSV(info: Object, userName: string, userPercentage: number, score
 
     return csv
 }
-
+export {
+    createCSV
+}
