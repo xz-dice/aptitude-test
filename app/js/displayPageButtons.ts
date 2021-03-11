@@ -1,4 +1,5 @@
 import {getTemplateAjax} from "./ajaxHandlebarsTemplate";
+import {printFilteredResultsToScreen} from "./handlebarsScoreTable";
 
 /**
  * Takes the Array that has been split up and displays the pagination Buttons on the page.
