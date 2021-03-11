@@ -52,3 +52,6 @@ function putDescription(counter: number) {
         }
     }
 }
+export{
+    putDescription
+}
