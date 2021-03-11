@@ -1,3 +1,5 @@
+
+import{getTests} from "./createUserObject";
 /**
  * function to generate the data object for the chart displayed on the front end.
  * @returns the data object for graph.js
@@ -90,3 +92,9 @@ async function generateLabels(users) {
     return labels;
 
 };
+export{
+    sendToChart,
+    generateDataset,
+    generateLabels,
+
+}
