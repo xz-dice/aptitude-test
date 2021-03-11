@@ -1,3 +1,7 @@
+import {populateHandlebars} from "./populateHandlebars";
+import {deleteCategory} from "./deleteCategory";
+import {populateNewUserCategoryDropdown, populateTableCategoryDropdown} from "./populateCategoryDropdown";
+import{updateScoreTable} from "./handlebarsScoreTable";
 
 function populateCategories() {
     document.querySelector('#categoriesContainer').innerHTML = '';
