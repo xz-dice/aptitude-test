@@ -12,3 +12,6 @@ function downloadFile(filename: string, csv: string) {
   hiddenElement.download = filename;
   hiddenElement.click();
 }
+export {
+  downloadFile
+}
