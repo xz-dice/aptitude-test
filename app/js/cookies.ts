@@ -15,3 +15,7 @@ function getCookie(name: string) {
     }
     return false
 }
+
+export{
+    getCookie
+}
