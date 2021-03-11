@@ -19,3 +19,7 @@ function splitArray(initialArray: Array<any>, newArrayLength: number) {
 
     return newArray;
 }
+
+export {
+    splitArray
+}
