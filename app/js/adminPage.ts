@@ -8,6 +8,7 @@ import {isTimeTotalValid} from "./validateTime";
 import {isTimeMinutesValid} from "./validateTime";
 import {isTimeSecondsValid} from "./validateTime";
 import {updateScoreTable} from "./handlebarsScoreTable";
+import {getBaseUrl} from "./utils";
 
 
 populateTestDropdowns();
