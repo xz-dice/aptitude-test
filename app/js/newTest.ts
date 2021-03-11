@@ -1,3 +1,9 @@
+import {convertToTotalTimeSeconds} from "./convertTime";
+import {isTimeMinutesValid, isTimeSecondsValid, isTimeTotalValid} from "./validateTime";
+import {jsonToFormData} from "./aptitudeTestHelpers";
+import {sendData} from "./sendData";
+import {ajaxResponseCheck} from "./ajaxResponseCheck";
+
 let testForm = document.querySelector<HTMLFormElement>('#testForm');
 let responseMsg = document.querySelector<HTMLElement>('#inputSubmissionConfirmation');
 
