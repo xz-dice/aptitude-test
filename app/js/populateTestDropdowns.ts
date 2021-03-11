@@ -1,3 +1,7 @@
+import {getData} from "./getData";
+import {getTemplateAjax} from "./ajaxHandlebarsTemplate";
+import {populateUserDuration} from "./populateUserDuration";
+
 /**
  * populates the test dropdowns for the add user,
  * and test filter for table,
