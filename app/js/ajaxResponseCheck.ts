@@ -1,3 +1,5 @@
+import {populateTestDropdowns} from "/aptitude-test/app/js/dist/populateTestDropdowns.js";
+
 /**
  * Handles the response messages for Ajax Requests for success/fail
  * @param success the state of the AJAX response, success/fail
