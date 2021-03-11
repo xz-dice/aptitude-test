@@ -6,8 +6,12 @@ import {searchAndFilter} from "./searchAndFilter";
 import {splitArray} from "./splitArray";
 import {updateChart} from "./scoreChart";
 import {displayPageBtns} from "./displayPageButtons";
-import {splitArray} from "./splitArray";
-import {splitArray} from "./splitArray";
+import {pageSelectorFunctionality} from "./displayPageButtons";
+import {getExistingUsers} from "./splitArray";
+import {openDialog} from "./splitArray";
+import {openDialog} from "./splitArray";
+
+
 import {UserAnswers} from "./interfaces/UserAnswers";
 
 /**
@@ -243,3 +247,6 @@ function addEventListenersForCloseResults() {
 
 updateScoreTable();
 
+export{
+    printFilteredResultsToScreen
+}
