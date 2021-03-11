@@ -1,4 +1,10 @@
 import {UserAnswers} from "./interfaces/UserAnswers";
+import {cancelTest, pageLeaveAlert} from "./endTest";
+import {getCookie} from "./cookies";
+import {getBaseUrl} from "./utils";
+import {getTimeForApi, interval} from "./timer";
+import {handleResponseFromAPI, resetReapplyCounter, sendUserResults} from "./sendResults";
+
 
 var questionAmount;
 
@@ -157,3 +163,13 @@ function showResults(pageLeft) {
     });
 }
 
+export{
+    finishTest,
+    checkAnswers,
+    getAnswers,
+    getUserAnswers,
+    getPercentResult,
+    addAnswerEventListeners,
+    trackActiveQuestion,
+    showResults
+}
