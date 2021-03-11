@@ -1,3 +1,5 @@
+import {finishTest} from "./dist/checkAnswers";
+
 function pageLeaveAlert() {
     alert ('Beware, if you leave the page the test will end!')
 }
@@ -13,3 +15,8 @@ function cancelTest() {
 document.body.addEventListener("mouseleave", pageLeaveAlert);
 document.addEventListener("visibilitychange", cancelTest);
 
+
+export {
+    pageLeaveAlert,
+    cancelTest
+}

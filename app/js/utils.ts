@@ -10,7 +10,7 @@ Handlebars.registerHelper('ifNotEquals', function(arg1, arg2, options) {
         return options.fn(this); //this run the code inside the result of the 'if' stmt in line 5 categoryItems.hbs
     } else {
         return options.inverse(this);
-git checkout });
+ });
 
 function getBaseUrl(): string {
     let isProd = false

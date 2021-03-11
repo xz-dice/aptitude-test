@@ -65,3 +65,8 @@ async function resetReapplyCounter() {
     })
 }
 
+export {
+    resetReapplyCounter,
+    handleResponseFromAPI,
+    sendUserResults
+}

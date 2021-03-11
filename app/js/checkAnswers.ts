@@ -1,4 +1,9 @@
-import {UserAnswers} from "./interfaces/UserAnswers";
+import {UserAnswers} from "./interfaces/UserAnswers"
+import {pageLeaveAlert, cancelTest} from "./endTest"
+import {getCookie} from "./cookies"
+import {getTimeForApi, interval} from "./timer"
+import {getBaseUrl} from "./utils"
+import {resetReapplyCounter, handleResponseFromAPI, sendUserResults} from "./sendResults"
 
 var questionAmount;
 
@@ -157,4 +162,7 @@ function showResults(pageLeft) {
     });
 }
 
+<<<<<<< HEAD
 export {getUserAnswers}
+=======
+>>>>>>> 1ab0e405964d542060eac7599b2171735895aea9
