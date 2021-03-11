@@ -1,3 +1,9 @@
+import {getCookie} from "/aptitude-test/app/js/utils";
+import {getUser} from "/aptitude-test/app/js/userLogIn";
+import {sendData} from "/aptitude-test/app/js/sendData";
+import {jsonToFormData} from "/aptitude-test/app/js/aptitudeTestHelpers";
+import {populateHandlebars} from "/aptitude-test/app/js/populateHandlebars";
+
 let authorised = false
 let user = getCookie('userEmail');
 getUser(user).then(function(user: any) {
