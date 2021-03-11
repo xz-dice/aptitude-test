@@ -1,4 +1,14 @@
 import {BaseUser} from "./interfaces/User";
+import {populateTestDropdowns} from "./populateTestDropdowns";
+import {populateTableCategoryDropdown} from "./populateCategoryDropdown";
+import {populateNewUserCategoryDropdown} from "./populateCategoryDropdown";
+import {jsonToFormData} from "./aptitudeTestHelpers";
+import {convertToTotalTimeSeconds} from "./convertTime";
+import {isTimeTotalValid} from "./validateTime";
+import {isTimeMinutesValid} from "./validateTime";
+import {isTimeSecondsValid} from "./validateTime";
+import {updateScoreTable} from "./handlebarsScoreTable";
+
 
 populateTestDropdowns();
 populateTableCategoryDropdown();
@@ -138,5 +148,10 @@ document.querySelector('#addNewUserForm').addEventListener('submit', function(ev
     })
 });
 
-
+export{
+    saveNewUser,
+    isEmailValid,
+    userExists,
+    getExistingUsers
+}
 
