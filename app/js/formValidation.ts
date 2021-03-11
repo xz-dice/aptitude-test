@@ -30,3 +30,8 @@ function answerHasValidValue(form: HTMLFormElement): boolean {
 
     return result;
 }
+export{
+    formHasQuestion,
+    formHasBetweenTwoAndFiveAnswers,
+    answerHasValidValue
+}
