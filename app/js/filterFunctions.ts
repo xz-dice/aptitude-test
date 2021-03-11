@@ -1,3 +1,5 @@
+import {updateScoreTable} from "./handlebarsScoreTable";
+
 document.querySelector('#filterScorePercentage').addEventListener('change', () => {
     updateScoreTable()
 })
@@ -149,4 +151,12 @@ function categoryFilter(resultArray: Array<any>) {
         })
     }
     return resultArray
+}
+
+export{
+    setDate,
+    dateFilter,
+    percentageFilter,
+    testAllocatedFilter,
+    categoryFilter
 }
