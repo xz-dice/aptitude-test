@@ -1,3 +1,10 @@
+import {getData} from "./getData";
+import {jsonToFormData} from "./aptitudeTestHelpers";
+import {sendData} from "./sendData";
+import {populateCategories} from "./displayCategories";
+import {populateTableCategoryDropdown} from "./populateCategoryDropdown";
+import {populateNewUserCategoryDropdown} from "./populateCategoryDropdown";
+
 async function addCategory():Promise<void> {
     let categoriesObject = await getData('/category');
     const responseMessage = document.querySelector('#addedCategoryConfirmation');
