@@ -1,3 +1,4 @@
-export interface UserAnswers {
+export interface
+UserAnswers {
     [key: number]: object
 }
