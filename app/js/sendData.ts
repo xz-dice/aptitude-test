@@ -1,3 +1,4 @@
+import {getBaseUrl} from "/aptitude-test/api/vendor/slim/slim/Slim/Http//Uri";
 /**
  * Send the new/updated JSON data to the database API
  *
@@ -15,3 +16,7 @@ async function sendData(data: FormData, path: string) {
     });
     return await response.json()
 }
+
+export{
+    sendData
+};
