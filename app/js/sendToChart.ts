@@ -96,5 +96,4 @@ export{
     sendToChart,
     generateDataset,
     generateLabels,
-
 }
