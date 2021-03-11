@@ -3,6 +3,10 @@
  *
  * @return object - user results
  */
+import {getBaseUrl} from "./utils";
+import {jsonToFormData} from "./aptitudeTestHelpers";
+import {getCookie} from "./cookies";
+
 function sendUserResults(userResults: Object) {
     let baseUrl = getBaseUrl()
     let userResultsForm = jsonToFormData(userResults)
@@ -59,4 +63,10 @@ async function resetReapplyCounter() {
         method: "post",
         body: jsonToFormData(userObject.data)
     })
+}
+
+export{
+    sendUserResults,
+    handleResponseFromAPI,
+    resetReapplyCounter
 }
