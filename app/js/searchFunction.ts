@@ -66,3 +66,9 @@ document.getElementById('searchReset').addEventListener('click', () => {
     document.querySelector<HTMLInputElement>('#searchInput').value = ''
     updateScoreTable()
 })
+
+export{
+    validateSearchInput,
+    sanitizeInput,
+    searchByTextAndEmail
+}
