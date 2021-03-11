@@ -1,3 +1,5 @@
+import {getTemplateAjax} from "./ajaxHandlebarsTemplate";
+
 /**
  * Takes the Array that has been split up and displays the pagination Buttons on the page.
  * @param paginatedArray
@@ -83,4 +85,11 @@ function showPaginationButtons(setToHidden: boolean) {
             viewPageButtons.classList.remove('hidden');
         }
     }
+}
+
+export{
+    displayPageBtns,
+    pageSelectorFunctionality,
+    pageButtonCheck,
+    showPaginationButtons
 }
