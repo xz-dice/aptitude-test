@@ -1,3 +1,8 @@
+import {getData} from "./getData";
+import {getTemplateAjax} from "./ajaxHandlebarsTemplate";
+import {Handlebars} from "./templates/testDropDown";
+
+
 /**
  * populates the category dropdown for the table
  */
@@ -20,4 +25,9 @@ function populateNewUserCategoryDropdown () {
             document.querySelector<HTMLElement>('#category_id').innerHTML = template(testsObject);
         });
     })
+}
+
+export{
+    populateTableCategoryDropdown,
+    populateNewUserCategoryDropdown
 }
