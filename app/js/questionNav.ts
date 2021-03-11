@@ -1,3 +1,5 @@
+import{trackActiveQuestion} from "./checkAnswers"
+
 var current = 1
 document.querySelector<HTMLElement>(".prev").style.visibility = "hidden"
 
@@ -113,3 +115,11 @@ document.querySelector('#flag-checkbox').addEventListener('change', updateFlagSt
 document.querySelector('#flag-button').addEventListener('click', () => {
     document.querySelector<HTMLElement>('#flag-checkbox').click()
 } )
+export{
+    active,
+    next,
+    prev,
+    updateFlagStatus,
+    fillNav,
+    changeQuestion
+}
