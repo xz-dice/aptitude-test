@@ -1,3 +1,10 @@
+import {getUserAnswers} from "./checkAnswers";
+import {flaggedQuestions} from "./questions";
+import {getTemplateAjax} from "./ajaxHandlebarsTemplate";
+import {changeQuestion} from "./questionNav";
+
+
+
 document.querySelector(".overview").addEventListener("click", function() {
     const tableBody = document.querySelector('.overview_table_body')
     // Sets the table body content as empty in case any table body has been created before

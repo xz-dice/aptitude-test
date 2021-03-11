@@ -37,3 +37,5 @@ document.querySelector('#flag-checkbox').addEventListener('change', function() {
     let qid  = document.querySelector<HTMLElement>('#questions .question.active').dataset.questionOrderId
     flaggedQuestions[qid] = document.querySelector<HTMLInputElement>('#flag-checkbox').checked
 })
+
+export {flaggedQuestions}

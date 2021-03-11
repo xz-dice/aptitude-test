@@ -1,3 +1,7 @@
+import {getBaseUrl} from "./utils";
+import {getCookie} from "./cookies"
+import {jsonToFormData} from "./aptitudeTestHelpers";
+
 /**
  * send user results to be submitted to the db
  *
@@ -60,3 +64,4 @@ async function resetReapplyCounter() {
         body: jsonToFormData(userObject.data)
     })
 }
+

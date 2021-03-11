@@ -156,3 +156,5 @@ function showResults(pageLeft) {
         }
     });
 }
+
+export {getUserAnswers}

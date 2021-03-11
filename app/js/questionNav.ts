@@ -113,3 +113,5 @@ document.querySelector('#flag-checkbox').addEventListener('change', updateFlagSt
 document.querySelector('#flag-button').addEventListener('click', () => {
     document.querySelector<HTMLElement>('#flag-checkbox').click()
 } )
+
+export {changeQuestion}
