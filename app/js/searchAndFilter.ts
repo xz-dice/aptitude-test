@@ -1,4 +1,8 @@
 import {BaseUser} from "./interfaces/User";
+import {BaseUser} from "./interfaces/User";
+import {BaseUser} from "./interfaces/User";
+import {BaseUser} from "./interfaces/User";
+import {BaseUser} from "./interfaces/User";
 
 /**
  * takes an array of objects- reduces the number of objects in the array based on search criteria, date criteria,
@@ -15,4 +19,8 @@ function searchAndFilter(resultArray: Array<BaseUser>) {
     resultArray = testAllocatedFilter(resultArray);
     resultArray = categoryFilter(resultArray);
     return resultArray;
+}
+
+export{
+    searchAndFilter
 }
