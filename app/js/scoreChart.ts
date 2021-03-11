@@ -1,6 +1,6 @@
 import {BaseUser} from "./interfaces/User";
-import {sendToChart} from "./interfaces/User";
-import{Chart} from "";
+import {sendToChart} from "./sendToChart";
+//import{Chart} from ""; Can't find my charts possibly needs to be myChart?
 
 
 /**
