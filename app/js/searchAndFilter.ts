@@ -1,8 +1,8 @@
 import {BaseUser} from "./interfaces/User";
-import {BaseUser} from "./interfaces/User";
-import {BaseUser} from "./interfaces/User";
-import {BaseUser} from "./interfaces/User";
-import {BaseUser} from "./interfaces/User";
+import {searchByTextAndEmail} from "./searchFunction";
+import {percentageFilter} from "./filterFunctions";
+import {testAllocatedFilter} from "./filterFunctions";
+import {categoryFilter} from "./filterFunctions";
 
 /**
  * takes an array of objects- reduces the number of objects in the array based on search criteria, date criteria,
