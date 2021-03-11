@@ -1,3 +1,5 @@
+
+import {sendData} from "./sendData";
 /**
  * deletes category from database
  * @param {number} category id
@@ -5,5 +7,8 @@
  */
 async function deleteCategory(id: number): Promise<any> {
     return sendData(undefined, `/category/delete/${id}`);
+}
+export{
+    deleteCategory
 }
 
