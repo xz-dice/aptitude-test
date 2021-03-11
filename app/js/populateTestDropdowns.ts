@@ -41,3 +41,7 @@ function populateTestDropdowns () {
         });
     });
 }
+
+export{
+    populateTestDropdowns
+}
