@@ -1,3 +1,5 @@
+import {getBaseUrl} from "/aptitude-test/app/js/Uri.php";
+
 /**
  * Get data from API
  *
@@ -10,3 +12,7 @@ async function getData(APIpath: string): Promise<any> {
 
     return data.json();
 }
+
+export{
+    getData
+};
