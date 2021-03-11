@@ -1,5 +1,5 @@
-import {getData} from "/aptitude-test/app/js/getData";
-import {getTemplateAjax} from "/aptitude-test/app/js/ajaxHandlebarsTemplate";
+import {getData} from "./getData";
+import {getTemplateAjax} from "./ajaxHandlebarsTemplate";
 
 /**
  * Populate handlebars template
@@ -20,4 +20,7 @@ async function populateHandlebars(targetElement: string, handlebarsPath: string,
     } else {
         score_list.innerHTML = template(dataToInsert);
     }
+}
+export{
+    populateHandlebars
 }
