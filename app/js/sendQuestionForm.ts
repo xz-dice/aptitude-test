@@ -6,6 +6,10 @@
  * @param questionId
  * @returns {Promise<void>}
  */
+import {answerHasValidValue, formHasBetweenTwoAndFiveAnswers, formHasQuestion} from "./formValidation";
+import {ajaxResponseCheck} from "./ajaxResponseCheck";
+import {editQuestion} from "./editQuestion";
+
 async function sendQuestionForm(event: Event, form: HTMLFormElement, isEdit: boolean, questionId: number = null) {
     event.preventDefault();
 
@@ -52,4 +56,8 @@ async function sendQuestionForm(event: Event, form: HTMLFormElement, isEdit: boo
         responseMsg.classList.add('alert-danger');
         responseMsg.textContent = 'Error: Please ensure you have filled out the question form correctly.';
     }
+}
+
+export{
+    sendQuestionForm
 }
