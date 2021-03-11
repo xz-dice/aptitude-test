@@ -49,7 +49,7 @@ function closeViewResultsModal() {
  * @param userInfo Object containing info of the user to edit.
  * @param tests Object containing the array returned by the /test api endpoint
  */
-function createEditModal(userInfo: BaseUser, tests: Array<Test>) {
+function createEditModal (userInfo: BaseUser, tests: Array<Test>) {
     let infoForTemplate = {
         tests: tests,
         user: userInfo,
