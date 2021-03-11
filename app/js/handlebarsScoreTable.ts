@@ -6,13 +6,12 @@ import {searchAndFilter} from "./searchAndFilter";
 import {splitArray} from "./splitArray";
 import {updateChart} from "./scoreChart";
 import {displayPageBtns} from "./displayPageButtons";
+import {getData} from "./getData";
 import {pageSelectorFunctionality} from "./displayPageButtons";
-import {getExistingUsers} from "./splitArray";
-import {openDialog} from "./splitArray";
-import {openDialog} from "./splitArray";
-
-
-import {UserAnswers} from "./interfaces/UserAnswers";
+import {openViewResultsModal} from "./modal";
+import {createCSV} from "./createCSV";
+import {openDialog} from "./modal";
+import {closeViewResultsModal} from "./modal";
 
 /**
  * Sorts the array of user objects by their 'dateCreated' with the
@@ -248,5 +247,16 @@ function addEventListenersForCloseResults() {
 updateScoreTable();
 
 export{
-    printFilteredResultsToScreen
+    sortUsersObjectByDate,
+    updateScoreTable,
+    printFilteredResultsToScreen,
+    createObjectFromParentElement,
+    addEditEventListeners,
+    addDeleteEventListeners,
+    deleteUser,
+    produceTable,
+    createUserResults,
+    addEventListenersForDownloadButtons,
+    addEventListenersForViewResults,
+    addEventListenersForCloseResults
 }
