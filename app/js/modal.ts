@@ -2,9 +2,17 @@ import {BaseUser} from "./interfaces/User";
 import {Test} from "./interfaces/Tests";
 import {getTemplateAjax} from "./ajaxHandlebarsTemplate"
 import {convertToTotalTimeSeconds} from "./convertTime";
-import {getExistingUsers} from "./interfaces/Tests";
-import {Test} from "./interfaces/Tests";
-import {Test} from "./interfaces/Tests";
+import {getExistingUsers} from "./adminPage";
+import {isEmpty} from "./sanitiseAdmin";
+import {isEmailValid} from "./adminPage";
+import {isTimeMinutesValid, isTimeSecondsValid, isTimeTotalValid} from "./validateTime";
+import {nameValidation} from "./sanitiseAdmin";
+import {postUserEdit} from "./postEditFunction";
+import {createObjectForDatabase} from "./postEditFunction";
+import {updateScoreTable} from "./handlebarsScoreTable";
+import {userExists} from "./adminPage";
+
+
 
 /**
  * Opens the modal dialog box.
