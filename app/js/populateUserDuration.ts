@@ -15,3 +15,5 @@ function populateUserDuration(test_option: HTMLInputElement, testFieldValue: str
             userDurationSecondsField.value = (String(userDurationSeconds) as any).padStart(2,'0');
         }
 }
+
+export {populateUserDuration};
