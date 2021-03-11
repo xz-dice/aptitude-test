@@ -1,6 +1,7 @@
 import {Test} from "./interfaces/Tests";
 import {BaseUser} from "./interfaces/User";
 import {Categories} from "./interfaces/Categories";
+import {getBaseUrl} from "./utils";
 
 /**
  * Get all the test results from the API.
@@ -199,4 +200,17 @@ async function createUsersObject() {
         }
     });
     return await {success: true, data: userDisplayArray}
+};
+
+export {
+    getResults,
+    getUsers,
+    getTests,
+    getCategories,
+    calculatePercentage,
+    secondsToMinutes,
+    findTestName,
+    findCategoryName,
+    getNameAndEmail,
+    createUsersObject,
 };
