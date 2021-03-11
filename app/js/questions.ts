@@ -3,11 +3,9 @@ import {getCookie} from "./cookies";
 import {getData} from "./getData";
 import {putDescription} from "./question_desc";
 import {addAnswerEventListeners} from "./checkAnswers";
-// import {fillNav} from "./dist/questionNav";
-// import {active} from "./dist/questionNav";
-// import {changeQuestion} from "./dist/questionNav";
 import {current} from "./dist/handlebars-v4.0.11";
 import {getTemplateAjax} from "./dist/ajaxHandlebarsTemplate";
+import {active, changeQuestion, fillNav} from "./questionNav";
 
 let flaggedQuestions = {}
 
