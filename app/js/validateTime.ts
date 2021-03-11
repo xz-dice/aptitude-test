@@ -27,3 +27,8 @@ function isTimeSecondsValid(time: any) {
     let intTime = parseInt(time);
     return (intTime >= 0 && intTime < 60);
 }
+export {
+    isTimeTotalValid,
+    isTimeMinutesValid,
+    isTimeSecondsValid
+}
