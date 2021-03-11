@@ -1,5 +1,10 @@
 import {BaseUser} from "./interfaces/User";
 import {Test} from "./interfaces/Tests";
+import {getTemplateAjax} from "./ajaxHandlebarsTemplate"
+import {convertToTotalTimeSeconds} from "./convertTime";
+import {Test} from "./interfaces/Tests";
+import {Test} from "./interfaces/Tests";
+import {Test} from "./interfaces/Tests";
 
 /**
  * Opens the modal dialog box.
@@ -124,4 +129,14 @@ function addEditModalSubmitEventListener() {
             }
         })
     })
+}
+
+export{
+    openDialog,
+    closeDialog,
+    openViewResultsModal,
+    closeViewResultsModal,
+    createEditModal,
+    fillEditModalFields,
+    addEditModalSubmitEventListener,
 }
