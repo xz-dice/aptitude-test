@@ -1,3 +1,4 @@
+
 function populateCategories() {
     document.querySelector('#categoriesContainer').innerHTML = '';
     populateHandlebars('#categoriesContainer', 'js/templates/categoryItem.hbs', 'category')
@@ -20,3 +21,7 @@ function populateCategories() {
 }
 
 populateCategories();
+
+export{
+    populateCategories
+}
