@@ -1,4 +1,4 @@
-import {populateTestDropdowns} from "/aptitude-test/app/js/dist/populateTestDropdowns.js";
+import {populateTestDropdowns} from "./populateTestDropdowns.js";
 
 /**
  * Handles the response messages for Ajax Requests for success/fail
@@ -21,4 +21,7 @@ function ajaxResponseCheck(success: boolean, message: string, responseMsgLocatio
         responseMsgLocation.classList.remove('alert-success');
         responseMsgLocation.classList.add('alert-danger');
     }
+}
+export{
+    ajaxResponseCheck
 }
