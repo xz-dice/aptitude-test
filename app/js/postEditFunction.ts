@@ -1,4 +1,6 @@
 import {BaseUser} from "./interfaces/User";
+import {getBaseUrl} from "./utils";
+import {jsonToFormData} from "./aptitudeTestHelpers";
 
 /**
  * Creates an object of the user from the data in the input fields.
@@ -37,4 +39,8 @@ async function postUserEdit(formData: BaseUser) {
         apiData = await apiData.json();
         return apiData
     }
+}
+export{
+    createObjectForDatabase,
+    postUserEdit
 }
