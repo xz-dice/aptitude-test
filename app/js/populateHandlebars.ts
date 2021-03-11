@@ -1,3 +1,6 @@
+import {getData} from "/aptitude-test/app/js/getData";
+import {getTemplateAjax} from "/aptitude-test/app/js/ajaxHandlebarsTemplate";
+
 /**
  * Populate handlebars template
  *
