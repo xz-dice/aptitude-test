@@ -1,4 +1,11 @@
+
 // populate dropdown menu with available tests
+import {sendData} from "./sendData";
+import {jsonToFormData} from "./aptitudeTestHelpers";
+import {populateHandlebars} from "./populateHandlebars";
+import {getData} from "./getData";
+import {sendQuestionForm} from "./sendQuestionForm";
+
 populateHandlebars('#test_id', 'js/templates/testDropdown.hbs', 'test');
 
 /**
@@ -50,3 +57,8 @@ async function getAnswerByQuestionId(id: number) {
         sendQuestionForm(event, form, true, questionId);
     });
 })();
+export{
+    editQuestion,
+    getQuestionById,
+    getAnswerByQuestionId
+}
