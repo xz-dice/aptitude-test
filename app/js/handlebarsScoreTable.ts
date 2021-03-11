@@ -1,4 +1,3 @@
-import {BaseUser, User} from "./interfaces/User";
 import {Scores} from "./interfaces/Scores";
 import {createUsersObject} from "./createUserObject";
 import {getTemplateAjax} from "./ajaxHandlebarsTemplate";
@@ -12,6 +11,10 @@ import {openViewResultsModal} from "./modal";
 import {createCSV} from "./createCSV";
 import {openDialog} from "./modal";
 import {closeViewResultsModal} from "./modal";
+import {createEditModal} from "./modal";
+import {getBaseUrl} from "./utils";
+import {downloadFile} from "./downloadFile";
+import {User} from "./interfaces/User";
 
 /**
  * Sorts the array of user objects by their 'dateCreated' with the
@@ -34,6 +37,7 @@ async function sortUsersObjectByDate() {
  * Get the handlebars template for table rows (adminTable.hbs), combine
  * with user objects and send this to searching and filtering.
  */
+//following function is missing an await
 async function updateScoreTable() {
     let userInfo = await sortUsersObjectByDate();
     let HBTemplate = await getTemplateAjax('js/templates/adminTable.hbs');
