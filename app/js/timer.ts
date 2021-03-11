@@ -1,3 +1,6 @@
+import {getCookie} from "./dist/timer";
+import {showResults} from "./dist/checkAnswers";
+
 
 /** function timeElapsed takes a dateStamp and return the difference between the current dateStamp and
  *  the one that is passed into the function
