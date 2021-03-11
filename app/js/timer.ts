@@ -1,5 +1,5 @@
-import {getCookie} from "./dist/timer";
-import {showResults} from "./dist/checkAnswers";
+import {getCookie} from "./cookies";
+import {showResults} from "./checkAnswers";
 
 
 /** function timeElapsed takes a dateStamp and return the difference between the current dateStamp and
@@ -58,3 +58,11 @@ let timeLimit: any = getCookie("userTime")
 timeLimit++
 let timeRemaining: any = timeRemainingCalc()
 let interval = setInterval(timer, 1000)
+
+export{
+    timeElapsed,
+    timeRemainingCalc,
+    timer,
+    getTimeForApi,
+    interval
+}
