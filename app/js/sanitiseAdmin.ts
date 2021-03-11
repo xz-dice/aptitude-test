@@ -28,4 +28,7 @@ function nameValidation (field: string) {
         return false
     }
 }
-
+export {
+    isEmpty,
+    nameValidation
+}
