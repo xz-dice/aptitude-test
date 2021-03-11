@@ -1,3 +1,5 @@
+import {getBaseUrl} from "/aptitude-test/app/js/Uri.php";
+
 /**
  *  check if the e-mail exist in the DB and return the id of the e-mail we are checking
  *
