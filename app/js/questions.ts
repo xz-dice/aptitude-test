@@ -1,4 +1,16 @@
+import {Handlebars} from "./dist/handlebars-v4.0.11";
+import {getCookie} from "./dist/cookies";
+import {getData} from "./dist/getData";
+import {putDescription} from "./dist/question_desc";
+import {addAnswerEventListeners} from "./dist/checkAnswers";
+import {fillNav} from "./dist/questionNav";
+import {active} from "./dist/questionNav";
+import {changeQuestion} from "./dist/questionNav";
+import {current} from "./dist/handlebars-v4.0.11";
+import {getTemplateAjax} from "./dist/ajaxHandlebarsTemplate";
+
 let flaggedQuestions = {}
+import {flaggedQuestions} from "./dist/questions";
 /**
  * fills handlebars template by getting the user data from the api and inserts into the user_list div
  *

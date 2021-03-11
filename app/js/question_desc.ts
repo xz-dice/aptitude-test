@@ -3,6 +3,7 @@
  * why is this not in the DB? who knows!
  * @param counter - question number
  */
+
 function putDescription(counter: number) {
 
     for (let i = 1; i <= counter; i++) {
