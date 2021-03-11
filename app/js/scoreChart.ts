@@ -1,4 +1,7 @@
 import {BaseUser} from "./interfaces/User";
+import {sendToChart} from "./interfaces/User";
+import{Chart} from "";
+
 
 /**
  * Function to update the chart. Due to how chart.js works, the only effective way to do
@@ -48,4 +51,9 @@ function drawChart(users: Array<BaseUser>) {
             }
         });
     });
+}
+
+export{
+    updateChart,
+    drawChart
 }
