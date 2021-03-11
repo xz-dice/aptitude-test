@@ -20,3 +20,7 @@ function jsonToFormData(jsonInput: Object) {
 
     return formData;
 }
+
+export {
+    jsonToFormData
+}
