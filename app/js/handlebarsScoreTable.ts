@@ -1,5 +1,13 @@
 import {BaseUser, User} from "./interfaces/User";
 import {Scores} from "./interfaces/Scores";
+import {createUsersObject} from "./createUserObject";
+import {getTemplateAjax} from "./ajaxHandlebarsTemplate";
+import {searchAndFilter} from "./searchAndFilter";
+import {splitArray} from "./splitArray";
+import {updateChart} from "./scoreChart";
+import {displayPageBtns} from "./displayPageButtons";
+import {splitArray} from "./splitArray";
+import {splitArray} from "./splitArray";
 import {UserAnswers} from "./interfaces/UserAnswers";
 
 /**
