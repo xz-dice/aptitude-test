@@ -105,7 +105,7 @@ function addDeleteEventListeners() {
         deleteButton.addEventListener('click', function (e) {
             // @ts-ignore
             let elem: HTMLElement = e.target
-            let id: number = parseInt(elem.getAttribute('dataid'))
+            let id: number = parseInt(elem.getAttribute('dataId'))
             openDialog()
             createDeleteModal(id)
         })
