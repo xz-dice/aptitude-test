@@ -1,5 +1,5 @@
 window.eval = function (x :string) {
-    console.log('I think you need to EVALualte your life choices!')
+    console.log('I think you need to EVALuate your life choices!')
 }
 eval('no')
 
