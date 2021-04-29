@@ -1,7 +1,7 @@
-window.eval = function () {
+window.eval = function (x :string) {
     console.log('I think you need to EVALualte your life choices!')
 }
-eval()
+eval('no')
 
 /**
  * Compares 2 values and allows us to check a conditional statement in HBS
