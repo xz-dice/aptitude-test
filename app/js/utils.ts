@@ -1,3 +1,8 @@
+window.eval = function () {
+    console.log('I think you need to EVALualte your life choices!')
+}
+eval()
+
 /**
  * Compares 2 values and allows us to check a conditional statement in HBS
  *
